@@ -10,10 +10,10 @@ from subprocess import Popen, PIPE
 
 os.chdir("/Users/ramon/projeto_cerc/projeto_cerc/amostra_dados/")
 
-#unzip_data = Popen('unzip chicago.csv.zip', shell=True, stdin=None, stdout=PIPE, stderr=PIPE)
-#out, err = unzip_data.communicate()
-#
-#print(out)
+unzip_data = Popen('unzip chicago.csv.zip', shell=True, stdin=None, stdout=PIPE, stderr=PIPE)
+out, err = unzip_data.communicate()
+
+print(out)
 
 #sys.path.insert(0, "/Users/ramon/projeto_cerc/projeto_cerc/amostra_dados/")
 
