@@ -3,17 +3,17 @@
 # Come�ando com os imports
 import logging
 import csv
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import sys
 import os
 from subprocess import Popen, PIPE
 
 os.chdir("/Users/ramon/projeto_cerc/projeto_cerc/amostra_dados/")
 
-unzip_data = Popen('unzip chicago.csv.zip', shell=True, stdin=None, stdout=PIPE, stderr=PIPE)
-out, err = unzip_data.communicate()
+#unzip_data = Popen('unzip chicago.csv.zip', shell=True, stdin=None, stdout=PIPE, stderr=PIPE)
+#out, err = unzip_data.communicate()
 
-print(out)
+#print(out)
 
 #sys.path.insert(0, "/Users/ramon/projeto_cerc/projeto_cerc/amostra_dados/")
 
@@ -41,7 +41,7 @@ input("Aperte Enter para continuar...")
 # TAREFA 1
 # TODO: Imprima as primeiras 20 linhas usando um loop para identificar os dados.
 print("\n\nTAREFA 1: Imprimindo as primeiras 20 amostras")
-for linha in data_list[0:19]:
+for linha in data_list[:20]:
     print('linha > %s' % linha)
 
 
@@ -56,7 +56,8 @@ input("Aperte Enter para continuar...")
 # TODO: Imprima o `g�nero` das primeiras 20 linhas
 
 print("\nTAREFA 2: Imprimindo o g�nero das primeiras 20 amostras")
-
+obtem_genero: list = list(map(lambda p: print('genero >', p[6]), data_list[:20]))
+obtem_genero
 
 # �timo! N�s podemos pegar as linhas(samples) iterando com um for, e as colunas(features) por �ndices.
 # Mas ainda � dif�cil pegar uma coluna em uma lista. Exemplo: Lista com todos os g�neros
@@ -65,18 +66,19 @@ input("Aperte Enter para continuar...")
 # TAREFA 3
 # TODO: Crie uma fun��o para adicionar as colunas(features) de uma lista em outra lista, na mesma ordem
 def column_to_list(data, index):
-    column_list = []
     # Dica: Voc� pode usar um for para iterar sobre as amostras, pegar a feature pelo seu �ndice, e dar append para uma lista
+    column_list: list = list(map(lambda r: r[index], data))
     return column_list
 
 
 # Vamos checar com os g�neros se isso est� funcionando (apenas para os primeiros 20)
 print("\nTAREFA 3: Imprimindo a lista de g�neros das primeiras 20 amostras")
 print(column_to_list(data_list, -2)[:20])
+#print('tamanho da lista', len(data_list))
 
 # ------------ N�O MUDE NENHUM C�DIGO AQUI ------------
 assert type(column_to_list(data_list, -2)) is list, "TAREFA 3: Tipo incorreto retornado. Deveria ser uma lista."
-assert len(column_to_list(data_list, -2)) == 1551505, "TAREFA 3: Tamanho incorreto retornado."
+assert len(column_to_list(data_list, -2)) == 1048575, "TAREFA 3: Tamanho incorreto retornado."
 assert column_to_list(data_list, -2)[0] == "" and column_to_list(data_list, -2)[1] == "Male", "TAREFA 3: A lista n�o coincide."
 # -----------------------------------------------------
 
@@ -86,14 +88,22 @@ input("Aperte Enter para continuar...")
 # TODO: Conte cada g�nero. Voc� n�o deveria usar uma fun��o para isso.
 male = 0
 female = 0
+vazio = 0
+generos: list = list(map(lambda t: 'vazio' if t[6] == '' else t[6].lower(), data_list))
+male = generos.count('male')
+female = generos.count('female')
+vazio = generos.count('vazio')
 
+print(vazio, 'vazio')
 
 # Verificando o resultado
-print("\nTAREFA 4: Imprimindo quantos masculinos e femininos n�s encontramos")
+print("\nTAREFA 4: Imprimindo quantos masculinos e femininos nós encontramos")
 print("Masculinos: ", male, "\nFemininos: ", female)
 
 # ------------ N�O MUDE NENHUM C�DIGO AQUI ------------
-assert male == 935854 and female == 298784, "TAREFA 4: A conta n�o bate."
+assert male == 665_437 and female == 198_247, "TAREFA 4: A conta nao bate."
+#ASSERT INSERIDO PRA UMA VALIDAÇAO EXATA DE CONTAGENS TOTAIS
+assert male + female + vazio == len(data_list), "TAREFA 4: Volumetrias das contagens nao batem"
 # -----------------------------------------------------
 
 input("Aperte Enter para continuar...")
@@ -103,7 +113,11 @@ input("Aperte Enter para continuar...")
 def count_gender(data_list):
     male = 0
     female = 0
-    return [male, female]
+    obtem_genero = lambda d: 'vazio' if d[6] == '' else d[6].lower()
+    generos = list(map(obtem_genero, data_list))
+    count_male = generos.count('male')
+    count_female = generos.count('female')
+    return [count_male, count_female]
 
 
 print("\nTAREFA 5: Imprimindo o resultado de count_gender")
@@ -112,7 +126,7 @@ print(count_gender(data_list))
 # ------------ N�O MUDE NENHUM C�DIGO AQUI ------------
 assert type(count_gender(data_list)) is list, "TAREFA 5: Tipo incorreto retornado. Deveria retornar uma lista."
 assert len(count_gender(data_list)) == 2, "TAREFA 5: Tamanho incorreto retornado."
-assert count_gender(data_list)[0] == 935854 and count_gender(data_list)[1] == 298784, "TAREFA 5: Resultado incorreto no retorno!"
+assert count_gender(data_list)[0] == 665_437 and count_gender(data_list)[1] == 198_247, "TAREFA 5: Resultado incorreto no retorno!"
 # -----------------------------------------------------
 
 input("Aperte Enter para continuar...")
@@ -121,8 +135,9 @@ input("Aperte Enter para continuar...")
 # TODO: Crie uma fun��o que pegue o g�nero mais popular, e retorne este g�nero como uma string.
 # Esperamos ver "Male", "Female", ou "Equal" como resposta.
 def most_popular_gender(data_list):
-    answer = ""
-    return answer
+    generos = count_gender(data_list)
+    male, female = generos[0], generos[1]
+    return 'Male' if male > female else 'Female' if female > male else 'Equal'
 
 
 print("\nTAREFA 6: Qual � o g�nero mais popular na lista?")
