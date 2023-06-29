@@ -22,6 +22,14 @@ TODO: resumao
   - Realizei a cópia do repositório pessoal que construi
   ```
   git clone git@github.com:ramondata/projeto_cerc.git
+
+  git config --global user.name 'Ramon Barbosa'
+
+  git config --global user.mail ramonbarbosafreitas@gmail.com
+
+  git push --set-upstream origin master
+
+  git tag -a tarefa1 -m "tarefa 1 completa"
   ```
 
 
