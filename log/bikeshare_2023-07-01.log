@@ -1,0 +1,667 @@
+2023-07-01 18:37:31,830 - Descompactando arquivo fonte de dados
+2023-07-01 18:37:35,867 - Documento acessado
+2023-07-01 18:37:35,867 - Numero de linhas:
+2023-07-01 18:37:35,867 - 1048576
+2023-07-01 18:37:35,867 - Linha 0: 
+2023-07-01 18:37:35,867 - ['Start Time', 'End Time', 'Trip Duration', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year;;;;;;; ']
+2023-07-01 18:37:35,867 - Linha 1: 
+2023-07-01 18:37:35,867 - ['2017-01-01 00:00:36', '2017-01-01 00:06:32', '356', 'Canal St & Taylor St', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-07-01 18:37:35,867 - 
+
+TAREFA 1: Imprimindo as primeiras 20 amostras
+2023-07-01 18:37:35,867 - ['Start Time', 'End Time', 'Trip Duration', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year;;;;;;; ']
+2023-07-01 18:37:35,867 - ['2017-01-01 00:00:36', '2017-01-01 00:06:32', '356', 'Canal St & Taylor St', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-07-01 18:37:35,867 - ['2017-01-01 00:02:54', '2017-01-01 00:08:21', '327', 'Larrabee St & Menomonee St', 'Sheffield Ave & Kingsbury St', 'Subscriber', 'Male', '1984.0;;;;;;;']
+2023-07-01 18:37:35,867 - ['2017-01-01 00:06:06', '2017-01-01 00:18:31', '745', 'Orleans St & Chestnut St (NEXT Apts)', 'Ashland Ave & Blackhawk St', 'Subscriber', 'Male', '1985.0;;;;;;;']
+2023-07-01 18:37:35,867 - ['2017-01-01 00:07:28', '2017-01-01 00:12:51', '323', 'Franklin St & Monroe St', 'Clinton St & Tilden St', 'Subscriber', 'Male', '1990.0;;;;;;;']
+2023-07-01 18:37:35,867 - ['2017-01-01 00:07:57', '2017-01-01 00:20:53', '776', 'Broadway & Barry Ave', 'Sedgwick St & North Ave', 'Subscriber', 'Male', '1990.0;;;;;;;']
+2023-07-01 18:37:35,867 - ['2017-01-01 00:10:44', '2017-01-01 00:21:27', '643', 'State St & Kinzie St', 'Wells St & Polk St', 'Subscriber', 'Male', '1970.0;;;;;;;']
+2023-07-01 18:37:35,867 - ['2017-01-01 00:11:34', '2017-01-01 00:23:47', '733', 'Wabash Ave & Wacker Pl', 'Clinton St & Tilden St', 'Subscriber', 'Male', '1986.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:14:57', '2017-01-01 00:26:22', '685', 'Daley Center Plaza', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:15:03', '2017-01-01 00:26:28', '685', 'Daley Center Plaza', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:17:01', '2017-01-01 00:29:49', '768', 'Dayton St & North Ave', 'Ogden Ave & Chicago Ave', 'Customer', '', ';;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:17:13', '2017-01-01 11:03:34', '38781', 'Wilton Ave & Diversey Pkwy', 'Halsted St & Wrightwood Ave', 'Subscriber', 'Female', '1988.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:18:28', '2017-01-01 00:31:05', '757', 'Canal St & Madison St', 'LaSalle St & Illinois St', 'Customer', '', ';;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:18:50', '2017-01-01 00:21:47', '177', 'Theater on the Lake', 'Lakeview Ave & Fullerton Pkwy', 'Subscriber', 'Male', '1991.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:23:41', '2017-01-01 00:29:13', '332', 'Halsted St & Maxwell St', 'Halsted St & 18th St', 'Subscriber', 'Male', '1984.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:25:47', '2017-01-01 00:39:53', '846', 'Ravenswood Ave & Lawrence Ave', 'Clarendon Ave & Gordon Ter', 'Subscriber', 'Female', '1987.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:25:47', '2017-01-01 00:43:23', '1056', 'Clark St & Congress Pkwy', 'Wolcott Ave & Polk St', 'Subscriber', 'Male', '1984.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:26:21', '2017-01-01 00:39:40', '799', 'Ravenswood Ave & Lawrence Ave', 'Clarendon Ave & Gordon Ter', 'Subscriber', 'Male', '1987.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:27:21', '2017-01-01 00:42:59', '938', 'Millennium Park', 'Michigan Ave & 18th St', 'Subscriber', 'Male', '1991.0;;;;;;;']
+2023-07-01 18:37:35,868 - ['2017-01-01 00:27:28', '2017-01-01 00:42:44', '916', 'Millennium Park', 'Michigan Ave & 18th St', 'Subscriber', 'Female', '1990.0;;;;;;;']
+2023-07-01 18:37:35,868 - remoção do cabeçalho dos exemplos do data list
+2023-07-01 18:37:35,895 - 
+TAREFA 2: Imprimindo o genero das primeiras 20 amostras
+2023-07-01 18:37:35,895 - genero > vazio
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > vazio
+2023-07-01 18:37:35,895 - genero > vazio
+2023-07-01 18:37:35,895 - genero > vazio
+2023-07-01 18:37:35,895 - genero > Female
+2023-07-01 18:37:35,895 - genero > vazio
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Female
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - genero > Female
+2023-07-01 18:37:35,895 - genero > Male
+2023-07-01 18:37:35,895 - 
+TAREFA 3: Imprimindo a lista de gêneros das primeiras 20 amostras
+2023-07-01 18:37:35,978 - ['', 'Male', 'Male', 'Male', 'Male', 'Male', 'Male', '', '', '', 'Female', '', 'Male', 'Male', 'Female', 'Male', 'Male', 'Male', 'Female', 'Male']
+2023-07-01 18:37:36,518 - 
+TAREFA 4: Imprimindo quantos masculinos e femininos nós encontramos
+2023-07-01 18:37:36,518 - Masculinos: 665437
+2023-07-01 18:37:36,518 - Femininos: 198247
+2023-07-01 18:37:36,518 - Vazio: 184891
+2023-07-01 18:37:36,518 - 
+TAREFA 5: Imprimindo o resultado de count_gender
+2023-07-01 18:37:36,689 - [665437, 198247]
+2023-07-01 18:37:37,249 - 
+TAREFA 6: Qual é o gênero mais popular na lista?
+2023-07-01 18:37:37,388 - O gênero mais popular na lista é: Male
+2023-07-01 18:37:37,663 - Gráfico salvo
+2023-07-01 18:37:47,024 - 
+TAREFA 7: Verifique o gráfico de user_types
+2023-07-01 18:37:47,179 - 
+TAREFA 8: Por que a condição a seguir é Falsa?
+2023-07-01 18:37:47,179 - male + female == len(data_list): False
+2023-07-01 18:37:47,179 - resposta: Por conta dos campos vazios. Para a equação ser bem sucedida seria necessário subtrair da contagem do data_list as aparições vazias
+2023-07-01 18:37:48,123 - 
+TAREFA 9: Imprimindo o mínimo, máximo, média, e mediana
+2023-07-01 18:37:48,123 - Min: 60.0 Max: 86338.0 Média: 885 Mediana: 3633
+2023-07-01 18:37:48,382 - 
+TAREFA 10: Imprimindo as start stations:
+2023-07-01 18:37:48,383 - Contagem de start stations: 578
+2023-07-01 18:37:48,383 - Benson Ave & Church St
+2023-07-01 18:37:48,383 - Museum of Science and Industry
+2023-07-01 18:37:48,383 - Western Ave & Congress Pkwy
+2023-07-01 18:37:48,383 - Halsted St & 35th St (*)
+2023-07-01 18:37:48,383 - Jeffery Blvd & 76th St
+2023-07-01 18:37:48,383 - Paulina Ave & North Ave
+2023-07-01 18:37:48,383 - State St & 19th St
+2023-07-01 18:37:48,383 - University Ave & 57th St
+2023-07-01 18:37:48,383 - St. Louis Ave & Balmoral Ave
+2023-07-01 18:37:48,383 - Broadway & Wilson Ave
+2023-07-01 18:37:48,383 - Ashland Ave & Blackhawk St
+2023-07-01 18:37:48,383 - Franklin St & Lake St
+2023-07-01 18:37:48,383 - Stony Island Ave & 64th St
+2023-07-01 18:37:48,383 - Troy St & North Ave
+2023-07-01 18:37:48,383 - Wallace St & 35th St
+2023-07-01 18:37:48,383 - Racine Ave & 61st St
+2023-07-01 18:37:48,383 - Lincoln Ave & Waveland Ave
+2023-07-01 18:37:48,383 - Cottage Grove Ave & 63rd St
+2023-07-01 18:37:48,383 - Rush St & Superior St
+2023-07-01 18:37:48,383 - Financial Pl & Congress Pkwy
+2023-07-01 18:37:48,383 - Michigan Ave & Pearson St
+2023-07-01 18:37:48,383 - Ellis Ave & 55th St
+2023-07-01 18:37:48,383 - State St & Kinzie St
+2023-07-01 18:37:48,383 - Calumet Ave & 35th St
+2023-07-01 18:37:48,383 - Knox Ave & Montrose Ave
+2023-07-01 18:37:48,383 - Cannon Dr & Fullerton Ave
+2023-07-01 18:37:48,383 - Clark St & Lincoln Ave
+2023-07-01 18:37:48,383 - Warren Park West
+2023-07-01 18:37:48,383 - Kenton Ave & Madison St
+2023-07-01 18:37:48,383 - Laramie Ave & Madison St
+2023-07-01 18:37:48,383 - Clark St & Lunt Ave
+2023-07-01 18:37:48,383 - Washtenaw Ave & Lawrence Ave
+2023-07-01 18:37:48,383 - Jeffery Blvd & 71st St
+2023-07-01 18:37:48,383 - Lincoln Ave & Belle Plaine Ave
+2023-07-01 18:37:48,383 - MLK Jr Dr & 56th St (*)
+2023-07-01 18:37:48,383 - Wabash Ave & 16th St
+2023-07-01 18:37:48,383 - Halsted St & 18th St
+2023-07-01 18:37:48,383 - Halsted St & 56th St
+2023-07-01 18:37:48,383 - Ashland Ave & 50th St
+2023-07-01 18:37:48,383 - Sheridan Rd & Irving Park Rd
+2023-07-01 18:37:48,383 - Humphrey Ave & Ontario St
+2023-07-01 18:37:48,383 - Morgan St & Pershing Rd
+2023-07-01 18:37:48,383 - Shields Ave & 31st St
+2023-07-01 18:37:48,383 - Larrabee St & Menomonee St
+2023-07-01 18:37:48,383 - Southport Ave & Clark St
+2023-07-01 18:37:48,383 - Green St & Madison St
+2023-07-01 18:37:48,383 - South Shore Dr & 67th St
+2023-07-01 18:37:48,383 - Rush St & Cedar St
+2023-07-01 18:37:48,383 - Milwaukee Ave & Cuyler Ave
+2023-07-01 18:37:48,383 - Ada St & Washington Blvd
+2023-07-01 18:37:48,384 - McClurg Ct & Illinois St
+2023-07-01 18:37:48,384 - Larrabee St & Kingsbury St
+2023-07-01 18:37:48,384 - Calumet Ave & 71st St
+2023-07-01 18:37:48,384 - Prairie Ave & Garfield Blvd
+2023-07-01 18:37:48,384 - Damen Ave & Madison St
+2023-07-01 18:37:48,384 - Damen Ave & 51st St
+2023-07-01 18:37:48,384 - Halsted St & Polk St
+2023-07-01 18:37:48,384 - South Shore Dr & 71st St
+2023-07-01 18:37:48,384 - Cottage Grove Ave & 47th St
+2023-07-01 18:37:48,384 - Shore Dr & 55th St
+2023-07-01 18:37:48,384 - Franklin St & Quincy St
+2023-07-01 18:37:48,384 - Paulina St & Howard St
+2023-07-01 18:37:48,384 - Field Museum
+2023-07-01 18:37:48,384 - Harper Ave & 59th St
+2023-07-01 18:37:48,384 - Marshfield Ave & 44th St
+2023-07-01 18:37:48,384 - Saginaw Ave & Exchange Ave
+2023-07-01 18:37:48,384 - Central Park Blvd & 5th Ave
+2023-07-01 18:37:48,384 - Kostner Ave & Lake St
+2023-07-01 18:37:48,384 - Damen Ave & Division St
+2023-07-01 18:37:48,384 - Ridgeland Ave & Lake St
+2023-07-01 18:37:48,384 - Michigan Ave & 14th St
+2023-07-01 18:37:48,384 - California Ave & 26th St
+2023-07-01 18:37:48,384 - State St & 29th St
+2023-07-01 18:37:48,384 - Damen Ave & Charleston St
+2023-07-01 18:37:48,384 - Sheffield Ave & Willow St
+2023-07-01 18:37:48,384 - Damen Ave & Augusta Blvd
+2023-07-01 18:37:48,384 - Millard Ave & 26th St
+2023-07-01 18:37:48,384 - Woodlawn Ave & 75th St
+2023-07-01 18:37:48,384 - Fort Dearborn Dr & 31st St
+2023-07-01 18:37:48,384 - Desplaines St & Kinzie St
+2023-07-01 18:37:48,384 - Streeter Dr & Grand Ave
+2023-07-01 18:37:48,384 - Pulaski Rd & Eddy St
+2023-07-01 18:37:48,384 - LaSalle St & Jackson Blvd
+2023-07-01 18:37:48,384 - Wentworth Ave & 63rd St
+2023-07-01 18:37:48,384 - Central Park Ave & North Ave
+2023-07-01 18:37:48,384 - Kedzie Ave & Lake St
+2023-07-01 18:37:48,384 - Dusable Harbor
+2023-07-01 18:37:48,384 - Exchange Ave & 79th St
+2023-07-01 18:37:48,384 - Broadway & Argyle St
+2023-07-01 18:37:48,384 - Clark St & Winnemac Ave
+2023-07-01 18:37:48,384 - Franklin St & Chicago Ave
+2023-07-01 18:37:48,384 - Albany Ave & 26th St
+2023-07-01 18:37:48,384 - Dearborn St & Erie St
+2023-07-01 18:37:48,384 - Larrabee St & Division St
+2023-07-01 18:37:48,384 - Lincoln Ave & Diversey Pkwy
+2023-07-01 18:37:48,384 - Christiana Ave & Lawrence Ave
+2023-07-01 18:37:48,384 - 2112 W Peterson Ave
+2023-07-01 18:37:48,384 - Clark St & Chicago Ave
+2023-07-01 18:37:48,384 - Dearborn St & Monroe St
+2023-07-01 18:37:48,384 - Ashland Ave & Grand Ave
+2023-07-01 18:37:48,384 - Sheffield Ave & Webster Ave
+2023-07-01 18:37:48,384 - Chicago Ave & Sheridan Rd
+2023-07-01 18:37:48,384 - Halsted St & Wrightwood Ave
+2023-07-01 18:37:48,384 - Halsted St & Archer Ave
+2023-07-01 18:37:48,384 - Larrabee St & Armitage Ave
+2023-07-01 18:37:48,384 - Greenview Ave & Fullerton Ave
+2023-07-01 18:37:48,385 - Ashland Ave & 21st St
+2023-07-01 18:37:48,385 - Ashland Ave & Pershing Rd
+2023-07-01 18:37:48,385 - Lombard Ave & Garfield St
+2023-07-01 18:37:48,385 - Mies van der Rohe Way & Chestnut St
+2023-07-01 18:37:48,385 - Racine Ave & Wrightwood Ave
+2023-07-01 18:37:48,385 - California Ave & Milwaukee Ave
+2023-07-01 18:37:48,385 - State St & Pershing Rd
+2023-07-01 18:37:48,385 - Blue Island Ave & 18th St
+2023-07-01 18:37:48,385 - Troy St & Elston Ave
+2023-07-01 18:37:48,385 - Wells St & Polk St
+2023-07-01 18:37:48,385 - Central St Metra
+2023-07-01 18:37:48,385 - Orleans St & Elm St (*)
+2023-07-01 18:37:48,385 - Indiana Ave & 26th St
+2023-07-01 18:37:48,385 - Damen Ave & Coulter St
+2023-07-01 18:37:48,385 - Clark St & Berwyn Ave
+2023-07-01 18:37:48,385 - Drake Ave & Addison St
+2023-07-01 18:37:48,385 - Oakley Ave & Irving Park Rd
+2023-07-01 18:37:48,385 - Wilton Ave & Belmont Ave
+2023-07-01 18:37:48,385 - Monticello Ave & Irving Park Rd
+2023-07-01 18:37:48,385 - Calumet Ave & 51st St
+2023-07-01 18:37:48,385 - Stony Island Ave & 71st St
+2023-07-01 18:37:48,385 - Damen Ave & Pierce Ave
+2023-07-01 18:37:48,385 - Kostner Ave & Adams St
+2023-07-01 18:37:48,385 - Canal St & Taylor St
+2023-07-01 18:37:48,385 - Peoria St & Jackson Blvd
+2023-07-01 18:37:48,385 - Aberdeen St & Monroe St
+2023-07-01 18:37:48,385 - Damen Ave & Clybourn Ave
+2023-07-01 18:37:48,385 - Western Ave & Walton St
+2023-07-01 18:37:48,385 - Rainbow Beach
+2023-07-01 18:37:48,385 - Albany Ave & Bloomingdale Ave
+2023-07-01 18:37:48,385 - Clark St & Jarvis Ave
+2023-07-01 18:37:48,385 - Western Ave & Leland Ave
+2023-07-01 18:37:48,385 - Kedzie Ave & Palmer Ct
+2023-07-01 18:37:48,385 - Racine Ave & 13th St
+2023-07-01 18:37:48,385 - Halsted St & Maxwell St
+2023-07-01 18:37:48,385 - Ravenswood Ave & Berteau Ave
+2023-07-01 18:37:48,385 - Lincoln Ave & Winona St
+2023-07-01 18:37:48,385 - University Library (NU)
+2023-07-01 18:37:48,385 - Racine Ave & Randolph St
+2023-07-01 18:37:48,385 - Elmwood Ave & Austin St
+2023-07-01 18:37:48,385 - Hoyne Ave & 47th St
+2023-07-01 18:37:48,385 - Ellis Ave & 53rd St
+2023-07-01 18:37:48,385 - Lake Shore Dr & Monroe St
+2023-07-01 18:37:48,385 - Ashland Ave & Augusta Blvd
+2023-07-01 18:37:48,385 - Wabash Ave & Grand Ave
+2023-07-01 18:37:48,385 - Loomis St & Taylor St (*)
+2023-07-01 18:37:48,385 - Bosworth Ave & Howard St
+2023-07-01 18:37:48,385 - Clark St & Elm St
+2023-07-01 18:37:48,385 - Jefferson St & Monroe St
+2023-07-01 18:37:48,385 - Calumet Ave & 33rd St
+2023-07-01 18:37:48,385 - Elizabeth St & 47th St
+2023-07-01 18:37:48,385 - Oakley Ave & Touhy Ave
+2023-07-01 18:37:48,385 - Manor Ave & Leland Ave
+2023-07-01 18:37:48,385 - Valli Produce - Evanston Plaza
+2023-07-01 18:37:48,385 - Stave St & Armitage Ave
+2023-07-01 18:37:48,385 - Eckhart Park
+2023-07-01 18:37:48,386 - Broadway & Thorndale Ave
+2023-07-01 18:37:48,386 - MLK Jr Dr & 63rd St
+2023-07-01 18:37:48,386 - Western Ave & Monroe St
+2023-07-01 18:37:48,386 - Halsted St & Diversey Pkwy
+2023-07-01 18:37:48,386 - Leavitt St & Armitage Ave
+2023-07-01 18:37:48,386 - Eberhart Ave & 61st St
+2023-07-01 18:37:48,386 - Kedzie Ave & Milwaukee Ave
+2023-07-01 18:37:48,386 - Emerald Ave & 31st St
+2023-07-01 18:37:48,386 - Lombard Ave & Madison St
+2023-07-01 18:37:48,386 - Michigan Ave & Lake St
+2023-07-01 18:37:48,386 - Broadway & Cornelia Ave
+2023-07-01 18:37:48,386 - Ashland Ave & McDowell Ave
+2023-07-01 18:37:48,386 - Dearborn St & Adams St
+2023-07-01 18:37:48,386 - Damen Ave & Chicago Ave
+2023-07-01 18:37:48,386 - Clark St & Schiller St
+2023-07-01 18:37:48,386 - Southport Ave & Belmont Ave
+2023-07-01 18:37:48,386 - Chicago Ave & Washington St
+2023-07-01 18:37:48,386 - Burnham Harbor
+2023-07-01 18:37:48,386 - Clinton St & Washington Blvd
+2023-07-01 18:37:48,386 - Greenview Ave & Diversey Pkwy
+2023-07-01 18:37:48,386 - Cottage Grove Ave & 67th St
+2023-07-01 18:37:48,386 - Clarendon Ave & Leland Ave
+2023-07-01 18:37:48,386 - Stockton Dr & Wrightwood Ave
+2023-07-01 18:37:48,386 - California Ave & Fletcher St
+2023-07-01 18:37:48,386 - Clark St & Touhy Ave
+2023-07-01 18:37:48,386 - Canal St & Madison St
+2023-07-01 18:37:48,386 - Broadway & Waveland Ave
+2023-07-01 18:37:48,386 - Ellis Ave & 83rd St
+2023-07-01 18:37:48,386 - Leavitt St & Lawrence Ave
+2023-07-01 18:37:48,386 - Seeley Ave & Garfield Blvd
+2023-07-01 18:37:48,386 - Halsted St & 69th St
+2023-07-01 18:37:48,386 - Wabash Ave & 87th St
+2023-07-01 18:37:48,386 - Central St & Girard Ave
+2023-07-01 18:37:48,386 - Canal St & Harrison St
+2023-07-01 18:37:48,386 - Jeffery Blvd & 67th St
+2023-07-01 18:37:48,386 - Broadway & Sheridan Rd
+2023-07-01 18:37:48,386 - Milwaukee Ave & Rockwell St
+2023-07-01 18:37:48,386 - Sedgwick St & Webster Ave
+2023-07-01 18:37:48,386 - Logan Blvd & Elston Ave
+2023-07-01 18:37:48,386 - Perry Ave & 69th St
+2023-07-01 18:37:48,386 - LaSalle St & Washington St
+2023-07-01 18:37:48,386 - Millennium Park
+2023-07-01 18:37:48,386 - Michigan Ave & Madison St
+2023-07-01 18:37:48,386 - Wolcott Ave & Fargo Ave
+2023-07-01 18:37:48,386 - Keystone Ave & Montrose Ave
+2023-07-01 18:37:48,386 - McCormick Place
+2023-07-01 18:37:48,386 - Princeton Ave & Garfield Blvd
+2023-07-01 18:37:48,386 - East Ave & Garfield St
+2023-07-01 18:37:48,386 - Ashland Ave & Chicago Ave
+2023-07-01 18:37:48,386 - Prairie Ave & 43rd St
+2023-07-01 18:37:48,386 - Lawndale Ave & 23rd St
+2023-07-01 18:37:48,386 - Wood St & Division St
+2023-07-01 18:37:48,386 - Western Ave & Winnebago Ave
+2023-07-01 18:37:48,386 - Halsted St & Dickens Ave
+2023-07-01 18:37:48,386 - Sedgwick St & North Ave
+2023-07-01 18:37:48,386 - Wabash Ave & Cermak Rd
+2023-07-01 18:37:48,386 - Morgan St & 18th St
+2023-07-01 18:37:48,387 - Wentworth Ave & Archer Ave
+2023-07-01 18:37:48,387 - California Ave & Altgeld St
+2023-07-01 18:37:48,387 - California Ave & Division St
+2023-07-01 18:37:48,387 - Richmond St & Diversey Ave
+2023-07-01 18:37:48,387 - Union Ave & Root St
+2023-07-01 18:37:48,387 - Kedzie Ave & 21st St
+2023-07-01 18:37:48,387 - Indiana Ave & Roosevelt Rd
+2023-07-01 18:37:48,387 - Spaulding Ave & Division St
+2023-07-01 18:37:48,387 - Sangamon St & Washington Blvd (*)
+2023-07-01 18:37:48,387 - Wells St & Evergreen Ave
+2023-07-01 18:37:48,387 - Western Blvd & 48th Pl
+2023-07-01 18:37:48,387 - Clark St & Schreiber Ave
+2023-07-01 18:37:48,387 - Marion St & South Blvd
+2023-07-01 18:37:48,387 - Lincoln Ave & Roscoe St
+2023-07-01 18:37:48,387 - Clifton Ave & Lawrence Ave
+2023-07-01 18:37:48,387 - Racine Ave (May St) & Fulton St
+2023-07-01 18:37:48,387 - Sheridan Rd & Montrose Ave
+2023-07-01 18:37:48,387 - Wacker Dr & Washington St
+2023-07-01 18:37:48,387 - Cornell Ave & Hyde Park Blvd
+2023-07-01 18:37:48,387 - Leavitt St & North Ave
+2023-07-01 18:37:48,387 - Dayton St & North Ave
+2023-07-01 18:37:48,387 - Sheffield Ave & Fullerton Ave
+2023-07-01 18:37:48,387 - Lakeview Ave & Fullerton Pkwy
+2023-07-01 18:37:48,387 - Evans Ave & 75th St
+2023-07-01 18:37:48,387 - Southport Ave & Roscoe St
+2023-07-01 18:37:48,387 - Southport Ave & Clybourn Ave
+2023-07-01 18:37:48,387 - Racine Ave & Garfield Blvd
+2023-07-01 18:37:48,387 - Western Ave & Granville Ave
+2023-07-01 18:37:48,387 - Ashland Ave & Belle Plaine Ave
+2023-07-01 18:37:48,387 - Keystone Ave & Fullerton Ave
+2023-07-01 18:37:48,387 - LaSalle St & Illinois St
+2023-07-01 18:37:48,387 - Ashland Ave & Harrison St
+2023-07-01 18:37:48,387 - Blackstone Ave & Hyde Park Blvd
+2023-07-01 18:37:48,387 - State St & 35th St
+2023-07-01 18:37:48,387 - Clark St & Congress Pkwy
+2023-07-01 18:37:48,387 - Orleans St & Merchandise Mart Plaza
+2023-07-01 18:37:48,387 - Sheridan Rd & Greenleaf Ave
+2023-07-01 18:37:48,387 - Morgan St & 31st St
+2023-07-01 18:37:48,387 - Kedzie Ave & Roosevelt Rd
+2023-07-01 18:37:48,387 - Orleans St & Chestnut St (NEXT Apts)
+2023-07-01 18:37:48,387 - Shields Ave & 43rd St
+2023-07-01 18:37:48,387 - Fairbanks Ct & Grand Ave
+2023-07-01 18:37:48,387 - Field Blvd & South Water St
+2023-07-01 18:37:48,387 - Claremont Ave & Hirsch St
+2023-07-01 18:37:48,387 - Forest Ave & Chicago Ave
+2023-07-01 18:37:48,387 - Spaulding Ave & Armitage Ave
+2023-07-01 18:37:48,387 - Sedgwick St & Huron St
+2023-07-01 18:37:48,387 - Pine Grove Ave & Waveland Ave
+2023-07-01 18:37:48,387 - Marshfield Ave & Cortland St
+2023-07-01 18:37:48,387 - Austin Blvd & Lake St
+2023-07-01 18:37:48,387 - Clark St & 9th St (AMLI)
+2023-07-01 18:37:48,387 - Desplaines St & Jackson Blvd
+2023-07-01 18:37:48,387 - Phillips Ave & 79th St
+2023-07-01 18:37:48,387 - Drake Ave & Montrose Ave
+2023-07-01 18:37:48,387 - Stony Island Ave & 75th St
+2023-07-01 18:37:48,387 - Lake Shore Dr & Belmont Ave
+2023-07-01 18:37:48,387 - Broadway & Granville Ave
+2023-07-01 18:37:48,387 - Wilton Ave & Diversey Pkwy
+2023-07-01 18:37:48,388 - Humboldt Blvd & Armitage Ave
+2023-07-01 18:37:48,388 - Clark St & Armitage Ave
+2023-07-01 18:37:48,388 - Clifton Ave & Armitage Ave
+2023-07-01 18:37:48,388 - Wood St & Hubbard St
+2023-07-01 18:37:48,388 - Lake Shore Dr & Ohio St
+2023-07-01 18:37:48,388 - Drake Ave & Fullerton Ave
+2023-07-01 18:37:48,388 - Lake Park Ave & 53rd St
+2023-07-01 18:37:48,388 - Michigan Ave & Washington St
+2023-07-01 18:37:48,388 - Ashland Ave & Division St
+2023-07-01 18:37:48,388 - Carpenter St & Huron St
+2023-07-01 18:37:48,388 - Campbell Ave & Montrose Ave
+2023-07-01 18:37:48,388 - Morgan Ave & 14th Pl
+2023-07-01 18:37:48,388 - Forest Ave & Lake St
+2023-07-01 18:37:48,388 - Orleans St & Ohio St
+2023-07-01 18:37:48,388 - Ashland Ave & 69th St
+2023-07-01 18:37:48,388 - Normal Ave & 72nd St
+2023-07-01 18:37:48,388 - 900 W Harrison St
+2023-07-01 18:37:48,388 - Yates Blvd & 75th St
+2023-07-01 18:37:48,388 - Vernon Ave & 75th St
+2023-07-01 18:37:48,388 - Wabash Ave & 83rd St
+2023-07-01 18:37:48,388 - Canal St & Monroe St (*)
+2023-07-01 18:37:48,388 - Federal St & Polk St
+2023-07-01 18:37:48,388 - Laramie Ave & Kinzie St
+2023-07-01 18:37:48,388 - Western Ave & Division St
+2023-07-01 18:37:48,388 - Dorchester Ave & 49th St
+2023-07-01 18:37:48,388 - Hampden Ct & Diversey Pkwy
+2023-07-01 18:37:48,388 - Stetson Ave & South Water St
+2023-07-01 18:37:48,388 - Ashland Ave & Wellington Ave
+2023-07-01 18:37:48,388 - Ogden Ave & Race Ave
+2023-07-01 18:37:48,388 - Wells St & Concord Ln
+2023-07-01 18:37:48,388 - Central Park Ave & Ogden Ave
+2023-07-01 18:37:48,388 - Woodlawn Ave & Lake Park Ave
+2023-07-01 18:37:48,388 - Wells St & 19th St
+2023-07-01 18:37:48,388 - Halsted St & 51st St
+2023-07-01 18:37:48,388 - Bissell St & Armitage Ave
+2023-07-01 18:37:48,388 - Kedzie Ave & Foster Ave
+2023-07-01 18:37:48,388 - St. Clair St & Erie St
+2023-07-01 18:37:48,388 - Vernon Ave & 79th St
+2023-07-01 18:37:48,388 - Racine Ave & 35th St
+2023-07-01 18:37:48,388 - Kimbark Ave & 53rd St
+2023-07-01 18:37:48,388 - Central Park Ave & Elbridge Ave
+2023-07-01 18:37:48,388 - California Ave & 23rd Pl
+2023-07-01 18:37:48,388 - California Ave & North Ave
+2023-07-01 18:37:48,388 - Michigan Ave & Congress Pkwy
+2023-07-01 18:37:48,388 - Cottage Grove Ave & Oakwood Blvd
+2023-07-01 18:37:48,388 - Shedd Aquarium
+2023-07-01 18:37:48,388 - Sheffield Ave & Wrightwood Ave
+2023-07-01 18:37:48,388 - Racine Ave & 15th St
+2023-07-01 18:37:48,388 - Lakefront Trail & Bryn Mawr Ave
+2023-07-01 18:37:48,388 - Clark St & Elmdale Ave
+2023-07-01 18:37:48,388 - Ashland Ave & Grace St
+2023-07-01 18:37:48,388 - Ravenswood Ave & Montrose Ave (*)
+2023-07-01 18:37:48,388 - MLK Jr Dr & Oakwood Blvd
+2023-07-01 18:37:48,388 - East Ave & Madison St
+2023-07-01 18:37:48,388 - Clinton St & Madison St
+2023-07-01 18:37:48,388 - Ashland Ave & 63rd St
+2023-07-01 18:37:48,388 - Lincoln Ave & Belmont Ave
+2023-07-01 18:37:48,388 - Warren Park East
+2023-07-01 18:37:48,388 - Lincoln Ave & Addison St
+2023-07-01 18:37:48,389 - Dorchester Ave & 63rd St
+2023-07-01 18:37:48,389 - Indiana Ave & 40th St
+2023-07-01 18:37:48,389 - Calumet Ave & 18th St
+2023-07-01 18:37:48,389 - LaSalle St & Adams St
+2023-07-01 18:37:48,389 - Broadway & Ridge Ave
+2023-07-01 18:37:48,389 - Emerald Ave & 28th St
+2023-07-01 18:37:48,389 - Southport Ave & Waveland Ave
+2023-07-01 18:37:48,389 - Clark St & Leland Ave
+2023-07-01 18:37:48,389 - Stony Island Ave & 82nd St
+2023-07-01 18:37:48,389 - Wabash Ave & Wacker Pl
+2023-07-01 18:37:48,389 - Clark St & Randolph St
+2023-07-01 18:37:48,389 - Racine Ave & Belmont Ave
+2023-07-01 18:37:48,389 - South Shore Dr & 74th St
+2023-07-01 18:37:48,389 - Halsted St & Roscoe St
+2023-07-01 18:37:48,389 - Theater on the Lake
+2023-07-01 18:37:48,389 - Clark St & Lake St
+2023-07-01 18:37:48,389 - Ashland Ave & 13th St
+2023-07-01 18:37:48,389 - Clark St & Wellington Ave
+2023-07-01 18:37:48,389 - Greenwood Ave & 79th St
+2023-07-01 18:37:48,389 - Avers Ave & Belmont Ave
+2023-07-01 18:37:48,389 - Wells St & Elm St
+2023-07-01 18:37:48,389 - Albany (Kedzie) Ave & Montrose Ave
+2023-07-01 18:37:48,389 - State St & 33rd St
+2023-07-01 18:37:48,389 - Budlong Woods Library
+2023-07-01 18:37:48,389 - Damen Ave & Pershing Rd
+2023-07-01 18:37:48,389 - Ogden Ave & Chicago Ave
+2023-07-01 18:37:48,389 - Clybourn Ave & Division St
+2023-07-01 18:37:48,389 - 63rd St Beach
+2023-07-01 18:37:48,389 - Laramie Ave & Gladys Ave
+2023-07-01 18:37:48,389 - Larrabee St & Oak St
+2023-07-01 18:37:48,389 - Wells St & Huron St
+2023-07-01 18:37:48,389 - Damen Ave & Grand Ave
+2023-07-01 18:37:48,389 - Cicero Ave & Quincy St
+2023-07-01 18:37:48,389 - Cuyler Ave & Augusta St
+2023-07-01 18:37:48,389 - Ravenswood Ave & Lawrence Ave
+2023-07-01 18:37:48,389 - Sheridan Rd & Buena Ave
+2023-07-01 18:37:48,389 - Sacramento Blvd & Franklin Blvd
+2023-07-01 18:37:48,389 - Morgan St & Lake St
+2023-07-01 18:37:48,389 - Marshfield Ave & 59th St
+2023-07-01 18:37:48,389 - Pulaski Rd & Congress Pkwy
+2023-07-01 18:37:48,389 - Glenwood Ave & Morse Ave
+2023-07-01 18:37:48,389 - Southport Ave & Irving Park Rd
+2023-07-01 18:37:48,389 - Cottage Grove Ave & 51st St
+2023-07-01 18:37:48,389 - Kedzie Ave & Chicago Ave
+2023-07-01 18:37:48,389 - Oak Park Ave & Harrison St
+2023-07-01 18:37:48,389 - Racine Ave & Congress Pkwy
+2023-07-01 18:37:48,389 - Halsted St & 37th St
+2023-07-01 18:37:48,389 - Clinton St & 18th St
+2023-07-01 18:37:48,389 - Dodge Ave & Church St
+2023-07-01 18:37:48,389 - DuSable Museum
+2023-07-01 18:37:48,389 - Michigan Ave & 18th St
+2023-07-01 18:37:48,389 - Halsted St & 21st St
+2023-07-01 18:37:48,389 - Ashland Ave & Archer Ave
+2023-07-01 18:37:48,389 - Wabash Ave & 8th St
+2023-07-01 18:37:48,389 - Clarendon Ave & Gordon Ter
+2023-07-01 18:37:48,389 - Clinton St & Lake St
+2023-07-01 18:37:48,390 - Ashland Ave & Wrightwood Ave
+2023-07-01 18:37:48,390 - Broadway & Barry Ave
+2023-07-01 18:37:48,390 - Sedgwick St & Schiller St
+2023-07-01 18:37:48,390 - Ashland Ave & 66th St
+2023-07-01 18:37:48,390 - Wells St & Walton St
+2023-07-01 18:37:48,390 - Wood St & Milwaukee Ave
+2023-07-01 18:37:48,390 - Western Ave & 21st St
+2023-07-01 18:37:48,390 - Greenview Ave & Jarvis Ave
+2023-07-01 18:37:48,390 - Larrabee St & Webster Ave
+2023-07-01 18:37:48,390 - Normal Ave & Archer Ave
+2023-07-01 18:37:48,390 - California Ave & Montrose Ave
+2023-07-01 18:37:48,390 - Campbell Ave & North Ave
+2023-07-01 18:37:48,390 - Rhodes Ave & 32nd St
+2023-07-01 18:37:48,390 - Glenwood Ave & Touhy Ave
+2023-07-01 18:37:48,390 - Damen Ave & Foster Ave
+2023-07-01 18:37:48,390 - Marine Dr & Ainslie St
+2023-07-01 18:37:48,390 - May St & Cullerton St
+2023-07-01 18:37:48,390 - California Ave & 21st St
+2023-07-01 18:37:48,390 - Leavitt St & Archer Ave
+2023-07-01 18:37:48,390 - Damen Ave & Cortland St
+2023-07-01 18:37:48,390 - Southport Ave & Wrightwood Ave
+2023-07-01 18:37:48,390 - May St & 69th St
+2023-07-01 18:37:48,390 - Franklin St & Jackson Blvd
+2023-07-01 18:37:48,390 - Southport Ave & Wellington Ave
+2023-07-01 18:37:48,390 - Campbell Ave & Fullerton Ave
+2023-07-01 18:37:48,390 - MLK Jr Dr & 29th St
+2023-07-01 18:37:48,390 - Lincoln Ave & Fullerton Ave
+2023-07-01 18:37:48,390 - Clinton St & Roosevelt Rd
+2023-07-01 18:37:48,390 - Wabash Ave & Roosevelt Rd
+2023-07-01 18:37:48,390 - Ogden Ave & Roosevelt Rd
+2023-07-01 18:37:48,390 - Ravenswood Ave & Irving Park Rd
+2023-07-01 18:37:48,390 - Clinton St & Jackson Blvd
+2023-07-01 18:37:48,390 - Sheridan Rd & Lawrence Ave
+2023-07-01 18:37:48,390 - Rockwell St & Eastwood Ave
+2023-07-01 18:37:48,390 - Cicero Ave & Lake St
+2023-07-01 18:37:48,390 - Bennett Ave & 79th St
+2023-07-01 18:37:48,390 - Halsted St & Roosevelt Rd
+2023-07-01 18:37:48,390 - Clark St & Columbia Ave
+2023-07-01 18:37:48,390 - Kilbourn Ave & Irving Park Rd
+2023-07-01 18:37:48,390 - Wood St & 35th St
+2023-07-01 18:37:48,390 - Columbus Dr & Randolph St
+2023-07-01 18:37:48,390 - McClurg Ct & Erie St
+2023-07-01 18:37:48,390 - Lake Park Ave & 35th St
+2023-07-01 18:37:48,390 - Woodlawn Ave & 55th St
+2023-07-01 18:37:48,390 - Damen Ave & Leland Ave
+2023-07-01 18:37:48,390 - Milwaukee Ave & Wabansia Ave
+2023-07-01 18:37:48,390 - Rush St & Hubbard St
+2023-07-01 18:37:48,390 - Eastlake Ter & Rogers Ave
+2023-07-01 18:37:48,390 - Aberdeen St & Jackson Blvd
+2023-07-01 18:37:48,390 - Clinton St & Polk St (*)
+2023-07-01 18:37:48,390 - Seeley Ave & Roscoe St
+2023-07-01 18:37:48,390 - Kingsbury St & Erie St
+2023-07-01 18:37:48,390 - Damen Ave & Cullerton St
+2023-07-01 18:37:48,390 - Kingsbury St & Kinzie St
+2023-07-01 18:37:48,390 - Central Ave & Madison St
+2023-07-01 18:37:48,390 - California Ave & Lake St
+2023-07-01 18:37:48,390 - Pulaski Rd & Madison St
+2023-07-01 18:37:48,390 - State St & 79th St
+2023-07-01 18:37:48,390 - Desplaines St & Randolph St
+2023-07-01 18:37:48,390 - Greenwood Ave & 47th St
+2023-07-01 18:37:48,391 - Milwaukee Ave & Grand Ave
+2023-07-01 18:37:48,391 - Washtenaw Ave & 15th St (*)
+2023-07-01 18:37:48,391 - Halsted St & 47th Pl
+2023-07-01 18:37:48,391 - California Ave & Francis Pl
+2023-07-01 18:37:48,391 - MLK Jr Dr & 83rd St
+2023-07-01 18:37:48,391 - Halsted St & North Branch St
+2023-07-01 18:37:48,391 - Wisconsin Ave & Madison St
+2023-07-01 18:37:48,391 - Damen Ave & 59th St
+2023-07-01 18:37:48,391 - Noble St & Milwaukee Ave
+2023-07-01 18:37:48,391 - Artesian Ave & Hubbard St
+2023-07-01 18:37:48,391 - Calumet Ave & 21st St
+2023-07-01 18:37:48,391 - Clark St & Bryn Mawr Ave
+2023-07-01 18:37:48,391 - Paulina St & 18th St
+2023-07-01 18:37:48,391 - Wentworth Ave & 35th St
+2023-07-01 18:37:48,391 - Cottage Grove Ave & 43rd St
+2023-07-01 18:37:48,391 - Lake Shore Dr & North Blvd
+2023-07-01 18:37:48,391 - Halsted St & 63rd St
+2023-07-01 18:37:48,391 - Damen Ave & Wellington Ave
+2023-07-01 18:37:48,391 - South Chicago Ave & 83rd St
+2023-07-01 18:37:48,391 - Central Ave & Lake St
+2023-07-01 18:37:48,391 - Pulaski Rd & Lake St
+2023-07-01 18:37:48,391 - Halsted St & Willow St
+2023-07-01 18:37:48,391 - Kimball Ave & Belmont Ave
+2023-07-01 18:37:48,391 - Winchester Ave & Elston Ave
+2023-07-01 18:37:48,391 - Indiana Ave & 31st St
+2023-07-01 18:37:48,391 - Cicero Ave & Flournoy St
+2023-07-01 18:37:48,391 - Avondale Ave & Irving Park Rd
+2023-07-01 18:37:48,391 - Racine Ave & Fullerton Ave
+2023-07-01 18:37:48,391 - Lincoln Ave & Leavitt St
+2023-07-01 18:37:48,391 - Hermitage Ave & Polk St
+2023-07-01 18:37:48,391 - Morgan St & Polk St
+2023-07-01 18:37:48,391 - Sawyer Ave & Irving Park Rd
+2023-07-01 18:37:48,391 - Central Ave & Harrison St
+2023-07-01 18:37:48,391 - State St & Harrison St
+2023-07-01 18:37:48,391 - MLK Jr Dr & 47th St
+2023-07-01 18:37:48,391 - Lake Shore Dr & Diversey Pkwy
+2023-07-01 18:37:48,391 - Loomis St & Lexington St
+2023-07-01 18:37:48,391 - Broadway & Berwyn Ave
+2023-07-01 18:37:48,391 - Elston Ave & Wabansia Ave
+2023-07-01 18:37:48,391 - Cottage Grove Ave & 78th St
+2023-07-01 18:37:48,391 - Cityfront Plaza Dr & Pioneer Ct
+2023-07-01 18:37:48,391 - Oakley Ave & Roscoe St
+2023-07-01 18:37:48,391 - Halsted St & 59th St
+2023-07-01 18:37:48,391 - Western Ave & Howard St
+2023-07-01 18:37:48,391 - Commercial Ave & 83rd St
+2023-07-01 18:37:48,391 - Stony Island Ave & 67th St
+2023-07-01 18:37:48,391 - Wabash Ave & Adams St
+2023-07-01 18:37:48,391 - Austin Blvd & Chicago Ave
+2023-07-01 18:37:48,391 - Ravenswood Ave & Balmoral Ave
+2023-07-01 18:37:48,391 - Loomis St & Jackson Blvd
+2023-07-01 18:37:48,391 - Racine Ave & 18th St
+2023-07-01 18:37:48,391 - Green St & Randolph St
+2023-07-01 18:37:48,391 - Wolcott Ave & Polk St
+2023-07-01 18:37:48,391 - Ridge Blvd & Howard St
+2023-07-01 18:37:48,391 - Daley Center Plaza
+2023-07-01 18:37:48,391 - Halsted St & Blackhawk St (*)
+2023-07-01 18:37:48,391 - Buckingham Fountain
+2023-07-01 18:37:48,391 - Lake Park Ave & 47th St
+2023-07-01 18:37:48,391 - Talman Ave & Addison St
+2023-07-01 18:37:48,392 - Western Ave & Lunt Ave
+2023-07-01 18:37:48,392 - Lake Park Ave & 56th St
+2023-07-01 18:37:48,392 - Sheffield Ave & Wellington Ave
+2023-07-01 18:37:48,392 - Kedzie Ave & 24th St
+2023-07-01 18:37:48,392 - Kosciuszko Park
+2023-07-01 18:37:48,392 - Sheridan Rd & Noyes St (NU)
+2023-07-01 18:37:48,392 - Larrabee St & North Ave
+2023-07-01 18:37:48,392 - Lake Shore Dr & Wellington Ave
+2023-07-01 18:37:48,392 - Oak Park Ave & South Blvd
+2023-07-01 18:37:48,392 - California Ave & Cortez St
+2023-07-01 18:37:48,392 - Broadway & Belmont Ave
+2023-07-01 18:37:48,392 - Ogden Ave & Congress Pkwy
+2023-07-01 18:37:48,392 - Leavitt St & Addison St
+2023-07-01 18:37:48,392 - State St & Randolph St
+2023-07-01 18:37:48,392 - Sheffield Ave & Kingsbury St
+2023-07-01 18:37:48,392 - Dearborn Pkwy & Delaware Pl
+2023-07-01 18:37:48,392 - Maplewood Ave & Peterson Ave
+2023-07-01 18:37:48,392 - Loomis St & Archer Ave
+2023-07-01 18:37:48,392 - Pine Grove Ave & Irving Park Rd
+2023-07-01 18:37:48,392 - Franklin St & Monroe St
+2023-07-01 18:37:48,392 - Adler Planetarium
+2023-07-01 18:37:48,392 - Clark St & North Ave
+2023-07-01 18:37:48,392 - State St & Pearson St
+2023-07-01 18:37:48,392 - Canal St & Adams St
+2023-07-01 18:37:48,392 - Kedzie Ave & Bryn Mawr Ave
+2023-07-01 18:37:48,392 - Clark St & Grace St
+2023-07-01 18:37:48,392 - Francisco Ave & Foster Ave
+2023-07-01 18:37:48,392 - Damen Ave & Melrose Ave
+2023-07-01 18:37:48,392 - Cottage Grove Ave & 83rd St
+2023-07-01 18:37:48,392 - Clark St & Wrightwood Ave
+2023-07-01 18:37:48,392 - Sheridan Rd & Loyola Ave
+2023-07-01 18:37:48,392 - Clark St & Montrose Ave
+2023-07-01 18:37:48,392 - Montrose Harbor
+2023-07-01 18:37:48,392 - Shields Ave & 28th Pl
+2023-07-01 18:37:48,392 - Wentworth Ave & 33rd St
+2023-07-01 18:37:48,392 - Sheffield Ave & Waveland Ave
+2023-07-01 18:37:48,392 - Kilbourn Ave & Milwaukee Ave
+2023-07-01 18:37:48,392 - Ellis Ave & 60th St
+2023-07-01 18:37:48,392 - Mason Ave & Madison St
+2023-07-01 18:37:48,392 - Wentworth Ave & 24th St
+2023-07-01 18:37:48,392 - Paulina St & Montrose Ave
+2023-07-01 18:37:48,392 - Stony Island Ave & South Chicago Ave
+2023-07-01 18:37:48,392 - Mies van der Rohe Way & Chicago Ave
+2023-07-01 18:37:48,392 - Ritchie Ct & Banks St
+2023-07-01 18:37:48,392 - Clinton St & Tilden St
+2023-07-01 18:37:48,392 - Ellis Ave & 58th St
+2023-07-01 18:37:48,392 - Ashland Ave & Lake St
+2023-07-01 18:37:48,392 - Michigan Ave & Jackson Blvd
+2023-07-01 18:37:48,392 - Clarendon Ave & Junior Ter
+2023-07-01 18:37:48,392 - California Ave & Byron St
+2023-07-01 18:37:48,392 - Throop St & 52nd St
+2023-07-01 18:37:48,392 - Kedzie Ave & Leland Ave
+2023-07-01 18:37:48,392 - Damen Ave & Sunnyside Ave
+2023-07-01 18:37:48,392 - Western Ave & 24th St
+2023-07-01 18:37:48,392 - Ridge Blvd & Touhy Ave
+2023-07-01 18:37:48,392 - Fairfield Ave & Roosevelt Rd
+2023-07-01 18:37:48,392 - Cottage Grove Ave & 71st St
+2023-07-01 18:37:48,393 - Michigan Ave & Oak St
+2023-07-01 18:37:48,393 - Princeton Ave & 47th St
+2023-07-01 18:37:48,393 - Conservatory Dr & Lake St
+2023-07-01 18:37:48,393 - Wood St & Taylor St
+2023-07-01 18:37:48,393 - State St & Van Buren St
+2023-07-01 18:37:48,393 - Central Ave & Chicago Ave
+2023-07-01 18:37:48,393 - May St & Taylor St
+2023-07-01 18:37:48,393 - Racine Ave & 65th St
+2023-07-01 18:37:48,393 - Kedzie Ave & Harrison St
+2023-07-01 18:37:48,393 - Western Ave & 28th St
+2023-07-01 18:37:48,393 - 
+TAREFA 11: Estruturação de docstring realizada para as funções presentes neste script
+2023-07-01 18:37:48,393 - Você vai encarar o desafio? (yes ou no)
+2023-07-01 18:37:48,622 - 
+TAREFA 12: Imprimindo resultados para count_items()
+2023-07-01 18:37:48,622 - Tipos: ['', 'Female', 'Male'] Counts: [184891, 198247, 665437]
+2023-07-01 18:37:48,622 - 
+Apagando arquivo redundante

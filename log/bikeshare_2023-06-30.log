@@ -1,0 +1,46 @@
+2023-06-30 17:26:48,548 - consegui hello loooooog
+2023-06-30 17:28:44,553 - testando sistema de log
+2023-06-30 17:29:06,286 - testando sistema de log
+2023-06-30 17:44:19,770 - testando sistema de log
+2023-06-30 17:44:19,771 - Lendo o documento...
+2023-06-30 17:46:10,651 - testando sistema de log
+2023-06-30 17:46:10,651 - Lendo o documento...
+2023-06-30 17:53:20,365 - Descompactando dados
+2023-06-30 17:53:20,365 - Lendo o documento
+2023-06-30 17:53:23,522 - Ok!
+2023-06-30 17:53:23,523 - Numero de linhas:
+2023-06-30 17:53:23,523 - 1048576
+2023-06-30 17:53:23,523 - Linha 0: 
+2023-06-30 17:53:23,523 - ['Start Time', 'End Time', 'Trip Duration', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year;;;;;;; ']
+2023-06-30 17:53:23,523 - Linha 1: 
+2023-06-30 17:53:23,523 - ['2017-01-01 00:00:36', '2017-01-01 00:06:32', '356', 'Canal St & Taylor St', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-06-30 17:53:23,523 - 
+
+TAREFA 1: Imprimindo as primeiras 20 amostras
+2023-06-30 17:53:23,523 - ['Start Time', 'End Time', 'Trip Duration', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year;;;;;;; ']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:00:36', '2017-01-01 00:06:32', '356', 'Canal St & Taylor St', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:02:54', '2017-01-01 00:08:21', '327', 'Larrabee St & Menomonee St', 'Sheffield Ave & Kingsbury St', 'Subscriber', 'Male', '1984.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:06:06', '2017-01-01 00:18:31', '745', 'Orleans St & Chestnut St (NEXT Apts)', 'Ashland Ave & Blackhawk St', 'Subscriber', 'Male', '1985.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:07:28', '2017-01-01 00:12:51', '323', 'Franklin St & Monroe St', 'Clinton St & Tilden St', 'Subscriber', 'Male', '1990.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:07:57', '2017-01-01 00:20:53', '776', 'Broadway & Barry Ave', 'Sedgwick St & North Ave', 'Subscriber', 'Male', '1990.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:10:44', '2017-01-01 00:21:27', '643', 'State St & Kinzie St', 'Wells St & Polk St', 'Subscriber', 'Male', '1970.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:11:34', '2017-01-01 00:23:47', '733', 'Wabash Ave & Wacker Pl', 'Clinton St & Tilden St', 'Subscriber', 'Male', '1986.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:14:57', '2017-01-01 00:26:22', '685', 'Daley Center Plaza', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:15:03', '2017-01-01 00:26:28', '685', 'Daley Center Plaza', 'Canal St & Monroe St (*)', 'Customer', '', ';;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:17:01', '2017-01-01 00:29:49', '768', 'Dayton St & North Ave', 'Ogden Ave & Chicago Ave', 'Customer', '', ';;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:17:13', '2017-01-01 11:03:34', '38781', 'Wilton Ave & Diversey Pkwy', 'Halsted St & Wrightwood Ave', 'Subscriber', 'Female', '1988.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:18:28', '2017-01-01 00:31:05', '757', 'Canal St & Madison St', 'LaSalle St & Illinois St', 'Customer', '', ';;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:18:50', '2017-01-01 00:21:47', '177', 'Theater on the Lake', 'Lakeview Ave & Fullerton Pkwy', 'Subscriber', 'Male', '1991.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:23:41', '2017-01-01 00:29:13', '332', 'Halsted St & Maxwell St', 'Halsted St & 18th St', 'Subscriber', 'Male', '1984.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:25:47', '2017-01-01 00:39:53', '846', 'Ravenswood Ave & Lawrence Ave', 'Clarendon Ave & Gordon Ter', 'Subscriber', 'Female', '1987.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:25:47', '2017-01-01 00:43:23', '1056', 'Clark St & Congress Pkwy', 'Wolcott Ave & Polk St', 'Subscriber', 'Male', '1984.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:26:21', '2017-01-01 00:39:40', '799', 'Ravenswood Ave & Lawrence Ave', 'Clarendon Ave & Gordon Ter', 'Subscriber', 'Male', '1987.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:27:21', '2017-01-01 00:42:59', '938', 'Millennium Park', 'Michigan Ave & 18th St', 'Subscriber', 'Male', '1991.0;;;;;;;']
+2023-06-30 17:53:23,523 - ['2017-01-01 00:27:28', '2017-01-01 00:42:44', '916', 'Millennium Park', 'Michigan Ave & 18th St', 'Subscriber', 'Female', '1990.0;;;;;;;']
+2023-06-30 17:53:23,539 - 
+TAREFA 2: Imprimindo o g�nero das primeiras 20 amostras
+2023-06-30 17:53:23,548 - 
+TAREFA 3: Imprimindo a lista de g�neros das primeiras 20 amostras
+2023-06-30 17:53:23,640 - ['', 'Male', 'Male', 'Male', 'Male', 'Male', 'Male', '', '', '', 'Female', '', 'Male', 'Male', 'Female', 'Male', 'Male', 'Male', 'Female', 'Male']
+2023-06-30 17:53:24,074 - 
+TAREFA 4: Imprimindo quantos masculinos e femininos nós encontramos
