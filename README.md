@@ -153,7 +153,8 @@ log.info("male + female == len(data_list): %s" % (male + female == len(data_list
 - [x] Multiplas fontes e tipos de estrutura de dados ja mapeados e prontos a serem tratados nas dags orquestradas
 - [x] Camada sandbox para testes com amostras. Ambiente seguro e controlado de testes, evitando problemas de perda ou manipulação erradas de dados em camadas oficiais disponíveis
 - [x] Dados disponiveis na ferramenta synapse, que utiliza consultas simples em sql para pessoas de negócios poderem acessar dados para homologar aplicações sem necessidade de auxilio de pessoas com acesso para homologação de pipelines de dados
-- [x] Esteira devops que testa as aplicações no ambiente de dev, qa(homologação + sandbox) para enfim disponibilizar no ambiente de produção    
+- [x] Esteira devops que testa as aplicações no ambiente de dev, qa(homologação + sandbox) para enfim disponibilizar no ambiente de produção
+- [x] Camada refined dividida em duas camadas, a refined-star-schema para tratamentos robustos de times de data science e aplicações preparadas para manipulação de schemas do powerBI e a camada refined-noFN, ou seja, camada sem normalização de dados, com tabelas grandes com as junções mais consultadas ja preparadas e disponíveis com o intuito de aumentar ainda mais a performance para consultas de qualquer natureza. 
 
 
 
