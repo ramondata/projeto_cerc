@@ -9,7 +9,7 @@
 ```
 
 ### `TL;DR`
-TODO: resumao
+Projeto realizado como desafio e apresentação no processo seletivo da CERC com as frentes principais de Python e criação de arquitetura de data lake.
 
 ### `Cinfigurações do repositório`
 
@@ -25,6 +25,8 @@ TODO: resumao
 
   git tag -a tarefa1 -m "tarefa 1 completa"
   ```
+
+  - Foram realizados outros comandos durante a elaboração do projeto, porém esses foram os iniciais.
 
 ### `Etapa 1: Python`:
 
