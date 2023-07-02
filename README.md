@@ -134,6 +134,27 @@ log.info("male + female == len(data_list): %s" % (male + female == len(data_list
 # Arquitetura de data lake:
 ![name](amostra_dados/lake_arch.drawio.png)
 
+`tl;dr`
+
+- Estrutura de datalake realizada com a criação de camadas bem definidas. Automações da disponibilização dos dados e validados robusto de qualidade de dados na primeira camada antes de percorrer o pipeline.
+
+### `pontos fracos:`
+
+- [x] Rede virtual simples, provavel necessidade de uma rede virtual mais robusta para mais camadas de segurança na cloud
+- [x] Como as automações são feitas em containeres de servidores linux, com airflow e dentro de uma virtual machine windows para poder acompanhar as dags do airflow numa porta disponivel na rede, existirá a necessidade de manutenção e configuração recorrentes nessa estrutura de virtualização e containerização de softwares.
+- [x] Será neccessário a equipe de manutenção do data lake, focar esforços para debugar abends que aparecerão logo na primeira camada staged, por conta da validação de qualidade dos dados.
+- [x] Necessidade de boa passagem de conhecimento para as pessoas que navegarão entre as camadas do lake, devido sua complexidade.
+
+### `Pontos fortes:`
+
+- [x] Camadas do lake ja mapeiam e solucionam boa parte das maiores necessidades de limpeza e manipulações básicas nos dados.
+- [x] Dados disponíveis ja com esquemas estrela para análises e manipulações de junção complexas
+- [x] Toda a disponibilização dos dados é automatizada com o possivel gargalo de bugs mapeado ja na primeira camada
+- [x] Multiplas fontes e tipos de estrutura de dados ja mapeados e prontos a serem tratados nas dags orquestradas
+- [x] Camada sandbox para testes com amostras. Ambiente seguro e controlado de testes, evitando problemas de perda ou manipulação erradas de dados em camadas oficiais disponíveis
+- [x] Dados disponiveis na ferramenta synapse, que utiliza consultas simples em sql para pessoas de negócios poderem acessar dados para homologar aplicações sem necessidade de auxilio de pessoas com acesso para homologação de pipelines de dados
+- [x] Esteira devops que testa as aplicações no ambiente de dev, qa(homologação + sandbox) para enfim disponibilizar no ambiente de produção    
+
 
 
 
