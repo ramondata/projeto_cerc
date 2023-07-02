@@ -391,6 +391,17 @@ log.info("Você vai encarar o desafio? (yes ou no)")
 answer = "yes"
 
 def count_items(column_list):
+    '''
+    -> Realizar a obtenção dos itens únicos do conjunto solicitado e a contagem de cada um desses itens
+    
+    -> Argumentos:
+        column_list: lista com um conjunto de dados de mesmo tipo, i.e.: Como uma coluna de um dataset
+    
+    -> Retorna:
+          duas informações, o conjunto de itens distintos e o conjunto de contagem desses itens
+          e.g.: (['a', 'b'], [12, 54])
+          e.g.: (['Ramon', 'CERC'], [1, 1])
+    '''
     item_types = list(set(column_list))
     count_items = []
     for item in item_types:
