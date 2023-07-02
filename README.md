@@ -11,7 +11,7 @@
 ### `TL;DR`
 Projeto realizado como desafio e apresentação no processo seletivo da CERC com as frentes principais de Python e criação de arquitetura de data lake.
 
-### `Cinfigurações do repositório`
+### `Configurações do repositório`
 
   - Realizei a cópia do repositório local
   ```
