@@ -132,7 +132,7 @@ log.info("male + female == len(data_list): %s" % (male + female == len(data_list
 
 
 # Arquitetura de data lake:
-![name](amostra_dados/Untitled Diagram.drawio)
+![name](amostra_dados/lake_arch.drawio.png)
 
 
 
