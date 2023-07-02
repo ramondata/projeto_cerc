@@ -131,6 +131,9 @@ log.info("male + female == len(data_list): %s" % (male + female == len(data_list
 - [x] Realizei a elaboração da função nominal com o retorno do conjunto único de itens e a contagem desses itens
 
 
+# Arquitetura de data lake:
+![name](amostra_dados/Untitled Diagram.drawio)
+
 
 
 
