@@ -139,7 +139,7 @@ log.info("male + female == len(data_list): %s" % (male + female == len(data_list
 
 - Estrutura de datalake realizada com a criação de camadas bem definidas. Automações da disponibilização dos dados e validados robusto de qualidade de dados na primeira camada antes de percorrer o pipeline.
 
-### `pontos fracos:`
+### `Pontos fracos:`
 
 - [x] Rede virtual simples, provavel necessidade de uma rede virtual mais robusta para mais camadas de segurança na cloud
 - [x] Como as automações são feitas em containeres de servidores linux, com airflow e dentro de uma virtual machine windows para poder acompanhar as dags do airflow numa porta disponivel na rede, existirá a necessidade de manutenção e configuração recorrentes nessa estrutura de virtualização e containerização de softwares.
