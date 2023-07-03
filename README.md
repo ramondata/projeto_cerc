@@ -8,7 +8,8 @@
 
 ```
 
-### `TL;DR`
+`TL;DR`
+
 Projeto realizado como desafio e apresentação no processo seletivo da CERC com as frentes principais de Python e criação de arquitetura de data lake.
 
 ### `Configurações do repositório`
@@ -28,7 +29,7 @@ Projeto realizado como desafio e apresentação no processo seletivo da CERC com
 
   - Foram realizados outros comandos durante a elaboração do projeto, porém esses foram os iniciais.
 
-### `Etapa 1: Python`:
+### `Etapa 1 - Python:`
 
 - [x] `Criação de um módulo com o sistema de log:`
     - Toda a execução do software é registrada num arquivo de log.
@@ -131,10 +132,10 @@ log.info("male + female == len(data_list): %s" % (male + female == len(data_list
 - [x] Realizei a elaboração da função nominal com o retorno do conjunto único de itens e a contagem desses itens
 
 
-# Arquitetura de data lake:
+### `Etapa 2 - Arquitetura de data lake:`
 ![name](amostra_dados/lake_arch.drawio.png)
 
-`tl;dr`
+`TL;DR`
 
 - Estrutura de datalake realizada com a criação de camadas bem definidas. Automações da disponibilização dos dados e validados robusto de qualidade de dados na primeira camada antes de percorrer o pipeline.
 
